@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLOR DEL TEXTO P */
+
+p {
+    color: rgb(156, 155, 155);
+}
+
+/* COLOR DE FONDO DE LA WEB */
+
+body {
+    background-color: black;
+}
+
+/* CARACTERISTICAS TITULOS DE LA WEB */
+
+h1 {
+    color:white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 9px;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+h2  {
+    color: blueviolet;
+    text-align: center;
+}
+
+/* CARACTERISTICAS DEL FOOTER */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.800);
+    color: white;
+}
+
+footer ul {
+
+    padding-left: 90%;
+    
+}
+
+footer ul img{
+
+    width: 35px;
+    margin-left: 60px;
+
+}
+
+/* CARACTERISTICAS HEADER */
+
+header{
+
+    background-color: rgba(128, 128, 128, 0.507);
+    position: sticky;
+    z-index: 1;
+    top: 0px
+}
+
+header nav ul li a:hover{
+    color: white;
+    background-color: blueviolet
+}
+
+
+header nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-inline: 50px;
+
+}
+
+header nav ul{
+    text-align: center;
+
+}
+
+
+
+header ul li a{
+
+    text-decoration: none;
+    color: white;
+    background-color: rgba(119, 8, 119, 0.644);
+    border-radius: 15px;
+    padding: 2px;
+}
+
+header h1 a{
+
+    color: white;
+    background-color: rgba(119, 8, 119, 0.644);
+    border-radius: 15px;
+}
+
+/* CARACTERISTICAS BODY */
+
+body{
+    font-family: 'Tiro Kannada', serif;
+    line-height: 2rem;
+}
+
+
+/* CARACTERISTICAS CUADRO TARIFAS */
+
+
+tr {
+    color: rgb(160, 159, 159);
+}
+
+form{
+    color: rgb(158, 157, 157);
+}
+
+/* ------------GRID HTML GALERIA------------ */
+
+.contenedor-grid{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: stretch;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-gap: 20px;
+}
+
+
+.contenedor-grid .caja-grid figure{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-grid .caja-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja-grid:hover img{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/*---------------- MAX 768px -------------*/
+
+
+.c1 {
+    grid-column: 1/4;
+}
+
+@media screen and (max-width:1024px){
+    .c1 {
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (max-width:768px){
+
+.contenedor-grid{
+    
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 20vh)
+    
+}
+.contenedor-grid .caja-grid img{
+    width: 90%;
+    height: 90%;
+}
+
+.c1 {
+    grid-column: 1/4;
+}
+
+    
+}
+
+/*---------------------- MAX 420px------------------------- */
+
+@media screen and (max-width:420px){
+
+    .contenedor-grid{
+
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    .contenedor-grid .caja-grid img{
+        height: 90%;
+    }
+    
+    .c1 {
+        grid-column: 1/1;
+    }
+
+    header nav ul li{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    header nav ul li a{
+        background-color: rgba(7, 7, 163, 0.616);
+    }
+
+    header h1 a{
+
+        color: white;
+        background-color: rgba(7, 7, 163, 0.616);
+        
+    }
+
+    header{
+
+        background-color: black;
+    }
+}
+
+
+/* ------------------grid html index -------------------- */
+
+main{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: stretch;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-gap: 20px;
+}
+
+main .caja{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+main .caja img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+
+
+    main{
+        
+        width: 95%;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+        grid-gap: 10px;
+        object-fit: cover;
+        margin: auto;
+        
+    }
+    .main .caja img{
+        width: 90%;
+        height: 90%;
+        
+    }
+
+    .combo{
+        grid-column: 1/3;
+    }
+
+
+    .combo figure img{
+        height: 90%;
+        justify-content: center;
+    }
+
+
+
+ }
+
+ @media screen and (max-width:420px){
+
+    main{
+        
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        }
+
+    .combo{
+        grid-column: auto;
+    }
+
+}
