@@ -69,6 +69,11 @@ header nav ul li a:hover{
     background-color: blueviolet
 }
 
+header h1 a:hover{
+    color:blueviolet;
+    background-color: black;
+
+}
 
 header nav ul li{
     display: inline-block;
