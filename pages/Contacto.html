@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
@@ -29,61 +31,64 @@
 
 <body>
 
-<main>
+
 <!--------------------FORMULARIO---------------------------->
-    <h2>Contacto</h2>
+    <h2 class="titulo-contacto">Contacto</h2>
 
-        <form >
+<section class="contenedor-formulario">
 
-              <label for="campo-nombre-apellido">Nombre y apellido</label>
-              <input type="text" id="campo-nombre-apellido">
+    <div class="mb-3">
+        <label for="campo-email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="campo-email" placeholder="usuario@gmail.com">
+      </div>
 
-              <label for="campo-email">email</label>
-              <input type="email" id="campo-email" placeholder="ejemplo@gmail">
+      <div class="mb-3">
+        <label for="campo-nombre-apellido" class="form-label">Nombre y apellido</label>
+        <input type="name" class="form-control" id="campo-nombre-apellido" placeholder="nombre y apellido">
+      </div>
 
-              <label for="campo-telefono">Telefono</label>
-              <input type="tel" id="campo-telefono">
-
-              <hr>
-
-              <div>
-
-                 <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-                 <label for="comentarios">comentarios</label>
-
-              </div>
+      <div class="mb-3">
+        <label for="campo-telefono" class="form-label">Telefono</label>
+        <input type="tel" class="form-control" id="campo-telefono" placeholder="142262345">
+      </div>
 
 
-              <input type="submit" value="Click aqui para enviar">
-              <input type="reset" value="Borrar formulario">
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Acepto los terminos y condiciones.
+        </label>
+
+        <input class="btn btn-primary" type="submit" value="Enviar">
+        <input class="btn btn-primary" type="reset" value="Cancelar">
+
+      </div>
 
 
-              <div>
-                  
-               <label for="checkbox">Acepto las condiciones</label>
+    </section>
 
-                <input type="checkbox"> 
 
-              </div>
 
-              
 
-        </form>
-
- </main>
 
  <hr>
     <footer>
 
-        <div class="contenido-footer">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam, voluptatibus sint doloribus commodi, quasi aliquid tenetur explicabo optio, odio soluta? Sit delectus totam eligendi architecto mollitia consequuntur velit deleniti.
-            </p>
-                
-           
-        </div>
+      <div class="contenedor-redes-sociales">
+
+        <a href="www.facebook.com"><i class="bi bi-facebook"></i>Facebook</a>
+        <a href="www.instagram.com"><i class="bi bi-instagram"></i>Instagram</a>
+        
+    </div>
 
     </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
     
 </body>
 
