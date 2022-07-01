@@ -237,6 +237,7 @@ main{
     margin-top: 30px;
     margin-bottom: 30px;
     grid-gap: 20px;
+    text-align: center;
 }
 
 main .caja{
@@ -365,4 +366,18 @@ main .caja img{
 
 .contenedor-redes-sociales ul li a:hover{
     transform: translate(15px)
+}
+
+
+/* caracteristicas boton tarifas */
+
+.boton-tarifas{
+    background-color: rgba(48, 47, 47, 0.411);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.caja a{
+    text-decoration: none;
+    color: red;
 }
