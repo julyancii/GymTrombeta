@@ -305,6 +305,22 @@ main .caja img{
         grid-column: auto;
     }
 
+    .ubicacion-maps{
+
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .ubicacion-maps iframe{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
 }
 
 .mb-3{
@@ -315,5 +331,9 @@ main .caja img{
 
 }
 
+/* caracteristicas mapa contacto */
 
-
+.ubicacion-maps{
+    display: flex;
+    justify-content: center;
+}
