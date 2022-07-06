@@ -8,6 +8,9 @@
 
 p {
     color: rgb(156, 155, 155);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 /* COLOR DE FONDO DE LA WEB */
@@ -33,6 +36,14 @@ h2  {
     color: blueviolet;
     text-align: center;
 }
+
+h4  {
+    display: flex;
+    justify-content: center;
+    color: rgb(156, 155, 155);
+}
+
+
 
 /* CARACTERISTICAS DEL FOOTER */
 
