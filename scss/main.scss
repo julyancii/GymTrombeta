@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import "./utilities/mixin.scss";
+
 p {
     color: rgb(156, 155, 155);
     display: flex;
@@ -250,9 +252,10 @@ main{
 }
 
 .ubicacion-maps{
-    display: flex;
-    justify-content: center;
-}
+
+  @include flexcenter;
+  
+     }
 
 .contenedor-redes-sociales ul li{
 
@@ -279,3 +282,17 @@ main{
     }
 }
 
+.boton-tarifas{
+    background-color: rgba(128, 128, 128, 0.267);
+    border-radius: 20px;
+    padding: 2px;
+    a{
+        text-decoration: none;
+        color:rgba(0, 255, 255, 0.596);
+    }
+}
+
+.boton-combo{
+    @extend .boton-tarifas;
+    background: rgba(209, 1, 1, 0.486);
+}

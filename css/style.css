@@ -248,4 +248,18 @@ main .caja img {
   transform: translate(15px);
 }
 
+.boton-tarifas, .boton-combo {
+  background-color: rgba(128, 128, 128, 0.267);
+  border-radius: 20px;
+  padding: 2px;
+}
+.boton-tarifas a, .boton-combo a {
+  text-decoration: none;
+  color: rgba(0, 255, 255, 0.596);
+}
+
+.boton-combo {
+  background: rgba(209, 1, 1, 0.486);
+}
+
 /*# sourceMappingURL=style.css.map */
