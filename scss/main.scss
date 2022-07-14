@@ -36,7 +36,8 @@ h2  {
 h4  {
     display: flex;
     justify-content: center;
-    color: rgb(156, 155, 155);
+    // color: rgb(156, 155, 155);
+    color:map-get($map: $colors, $key: "primary" );
 }
 
 footer ul {
