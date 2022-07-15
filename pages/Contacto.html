@@ -50,44 +50,51 @@
 <!--------------------FORMULARIO---------------------------->
     <h2 class="titulo-contacto">Contacto</h2>
 
-<section class="contenedor-formulario">
+<form class="contenedor-formulario">
 
-    <div class="mb-3">
-        <label for="campo-email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="campo-email" placeholder="usuario@gmail.com">
-      </div>
+  <div class="mb-3">
 
-      <div class="mb-3">
-        <label for="campo-nombre-apellido" class="form-label">Nombre y apellido</label>
-        <input type="name" class="form-control" id="campo-nombre-apellido" placeholder="nombre y apellido">
-      </div>
+    <label for="campo-email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="campo-email" aria-describedby="emailHelp">
 
-      <div class="mb-3">
-        <label for="campo-telefono" class="form-label">Telefono</label>
-        <input type="tel" class="form-control" id="campo-telefono" placeholder="142262345">
-      </div>
+  </div>
 
+  <div class="mb-3">
 
-      <div class="mb-3">
-        <label for="comentarios" class="form-label">Comentarios</label>
-        <textarea class="form-control" id="comentarios" rows="3"></textarea>
-      </div>
+    <label for="campo-nombre-apellido class="form-label">Nombre y apellido</label>
+    <input type="name" class="form-control" id="campo-nombre-apellido">
 
-      <div class="mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Acepto los terminos y condiciones.
-        </label>
+  </div>
 
-        <input class="btn btn-primary" type="submit" value="Enviar">
-        <input class="btn btn-primary" type="reset" value="Cancelar">
+  <div class="mb-3">
 
-      </div>
+    <label for="campo-telefono" class="form-label">Telefono</label>
+    <input type="tel" class="form-control" id="campo-telefono">
 
-      
+  </div>
 
+  <div class="mb-3 form-check">
 
-</section>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones.</label>
+
+  </div>
+
+  <div class="mb-3">
+
+    <label for="comentarios" class="form-label">Comentarios</label>
+    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+
+  </div>
+
+  <div class="text-center">
+
+         <button type="submit" class="btn btn-primary">Enviar</button>
+         <button type="reset" class="btn btn-primary">Reestablecer</button>
+
+  </div>
+  
+</form>
 
     <section class="ubicacion-maps">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13120.520275602341!2d-58.287445419543445!3d-34.70189914931951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335040a2ae07%3A0x80791a6b2e430189!2sParque%20Lineal%20Don%20Bosco!5e0!3m2!1ses-419!2sar!4v1656642989222!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
